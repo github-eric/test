@@ -1,0 +1,10 @@
+---
+- name: connection test
+  hosts: all
+  tasks:
+    - name: ping test
+      ansible.builtin.ping:
+    - name: show uptime
+      ansible.builtin.shell: uptime
+      args:
+        executable: /bin/bash
